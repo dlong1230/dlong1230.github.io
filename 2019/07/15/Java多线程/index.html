@@ -94,17 +94,23 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP  进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频  线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音    二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​    重写run方法，调用实现类对象的s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://dlong1230.github.io.git/2019/07/14/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://dlong1230.github.io.git/2019/07/15/Java多线程/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP  进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频  线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音    二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​    重写run方法，调用实现类对象的s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-14T14:31:41.006Z">
+<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png">
+<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png">
+<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png">
+<meta property="og:updated_time" content="2019-06-10T12:12:44.210Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP  进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频  线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音    二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​    重写run方法，调用实现类对象的s">
+<meta name="twitter:image" content="d:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
 
 
 
@@ -133,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://dlong1230.github.io.git/2019/07/14/hello-world/">
+  <link rel="canonical" href="https://dlong1230.github.io.git/2019/07/15/Java多线程/">
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -314,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dlong1230.github.io.git/2019/07/14/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://dlong1230.github.io.git/2019/07/15/Java多线程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content>
@@ -331,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -343,8 +349,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-14T22:31:41+08:00">
-                2019-07-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-15T00:30:56+08:00">
+                2019-07-15
               </time>
             
 
@@ -381,20 +387,112 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h1 id="Java多线程"><a href="#Java多线程" class="headerlink" title="Java多线程"></a>Java多线程</h1><h2 id="一、-程序、进程、线程的概念"><a href="#一、-程序、进程、线程的概念" class="headerlink" title="一、 程序、进程、线程的概念"></a>一、 程序、进程、线程的概念</h2><ol>
+<li><p>程序：静态概念，指令的有序集合。例如某个APP</p>
+</li>
+<li><p>进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频</p>
+</li>
+<li><p>线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音</p>
+<p><img src="D:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="1559640622948"></p>
+</li>
+</ol>
+<h2 id="二、Java如何实现多线程"><a href="#二、Java如何实现多线程" class="headerlink" title="二、Java如何实现多线程"></a>二、Java如何实现多线程</h2><ol>
+<li><p>继承Thread类（由于Java的单继承特点，不加以使用）</p>
+<p>​    重写run方法，调用实现类对象的start方法启动线程。例如：st.start()。</p>
+</li>
+<li><p>实现Runnable接口：</p>
+<p>​    重写run方法，实现实现类对象，通过调用Thread对象（代理类对象）的start方法启动线程。例如：new Thread(st).start()。</p>
+</li>
+<li><p>实现Callable接口：</p>
+<p>​    JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图：</p>
+<p><img src="D:%5CMyMarkdownFile%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png" alt="1559644193639"></p>
+<p>数据的并发问题：多个代理抢夺同一份资源</p>
+</li>
+</ol>
+<h2 id="三、线程的状态和方法"><a href="#三、线程的状态和方法" class="headerlink" title="三、线程的状态和方法"></a>三、线程的状态和方法</h2><p>类比足球比赛中球员的状态</p>
+<ol>
+<li><p>新建（new）：球员入选23人名单</p>
+<p>线程对象一旦创建，就进入了新生状态。线程有了自己的工作空间</p>
+</li>
+<li><p>就绪（runnable）：球员入场，去抢球</p>
+<ul>
+<li>start</li>
+<li>阻塞事件解除</li>
+<li>yield（礼让）：将线程从运行状态转入就绪状态，静态方法，写在线程体中。</li>
+<li>jvm切换其他线程</li>
+</ul>
+</li>
+<li><p>运行（running）：带球奔跑</p>
+<p>CPU调度时发生（无法人为干预）</p>
+</li>
+<li><p>阻塞（blocked）：球被抢了</p>
+<ul>
+<li>sleep（暂停）：抱着资源睡觉，不会释放锁</li>
+<li>wait：等在一边，此时别人可以使用资源</li>
+<li>join（插队）:合并线程，对象的成员方法，阻塞所在的线程体</li>
+<li>read/write</li>
+</ul>
+</li>
+<li><p>死亡（dead）：球员下场</p>
+<ul>
+<li>代码正常执行完毕</li>
+<li><del>强制结束（已过时）</del></li>
+<li>加入boolean标识，标识线程体是否可以运行</li>
+</ul>
+</li>
+</ol>
+<h2 id="四、线程的基本信息和优先级"><a href="#四、线程的基本信息和优先级" class="headerlink" title="四、线程的基本信息和优先级"></a>四、线程的基本信息和优先级</h2><p>线程的分类：</p>
+<ul>
+<li>用户线程</li>
+<li>守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程</li>
+</ul>
+<p>线程的其他常用方法：</p>
+<p><img src="D:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" alt="1559736274640"></p>
+<p>线程调度器按照优先级将线程调入CPU</p>
+<p>注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行；</p>
+<h2 id="五、线程的同步和死锁"><a href="#五、线程的同步和死锁" class="headerlink" title="五、线程的同步和死锁"></a>五、线程的同步和死锁</h2><p>线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程）</p>
+<p><img src="D:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" alt="1559995199164"></p>
+<p>同步技术原理</p>
+<p><img src="D:%5CMyMarkdownFile%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png" alt="1559995791587"></p>
+<p>线程安全解决方案：</p>
+<ol>
+<li><p>同步代码块：</p>
+<p>格式：synchronized(“obj”){</p>
+<p>​                访问了共享数据的代码；</p>
+<p>​            }</p>
+<p>锁对象：obj（定义的任意一个对象，在run方法外创建）</p>
+</li>
+<li><p>同步方法：</p>
+<p>格式：“修饰符” synchronized “返回值” “方法名”（）{</p>
+<p>​                访问了共享数据的代码；</p>
+<p>​            }</p>
+<p>锁对象：实现类对象，即this。</p>
+</li>
+<li><p>静态同步方法（优先于对象存在）：</p>
+<p>格式：“修饰符”  static synchronized “返回值” “方法名”（）{</p>
+<p>​                访问了共享数据的代码；</p>
+<p>​            }</p>
+<p>锁对象：本类的class属性（class文件对象）</p>
+</li>
+<li><p>Lock锁：</p>
+<p>JDK1.5之后出现在java.util.concurrent.locks包中的Lock接口（实现类为ReentrantLock）提供了一种新的锁机制。</p>
+<p>格式：在成员位置创建ReentrantLock对象；在访问共享数据代码前使用方法lock()；在访问共享数据代码后使用方法unlock()。</p>
+</li>
+</ol>
+<p>补充：</p>
+<ul>
+<li><p>死锁的产生：多个线程各自占有一些共享资源，并且相互等待资源【多个操作者（N&gt;=2）争夺多个资源（M&gt;2）,而且N&gt;=M】。当某一个同步块中同时拥有两个以上对象的锁是，就可能会发生死锁问题。</p>
+</li>
+<li><p>死锁的解决：</p>
+<ol>
+<li>互斥条件：一个资源每次只能被一个进程使用</li>
+<li>请求与保持条件：一个进程因请求资源二阻塞时，对以获得的资源保持不放</li>
+<li>不剥夺条件：进程以获得的资源，在使用完之前，不能强行剥夺</li>
+<li>循环等待条件：若干进程之间形成一种头尾相接的循环等待资源关系</li>
+</ol>
+</li>
+</ul>
+<h2 id="六、生产者消费者模式"><a href="#六、生产者消费者模式" class="headerlink" title="六、生产者消费者模式"></a>六、生产者消费者模式</h2><h2 id="七、任务调度"><a href="#七、任务调度" class="headerlink" title="七、任务调度"></a>七、任务调度</h2>
       
     </div>
     
@@ -418,13 +516,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/15/Java多线程/" rel="prev" title>
+              <a href="/2019/07/15/Java基础部分笔记/" rel="prev" title>
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -540,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java多线程"><span class="nav-number">1.</span> <span class="nav-text">Java多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、-程序、进程、线程的概念"><span class="nav-number">1.1.</span> <span class="nav-text">一、 程序、进程、线程的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、Java如何实现多线程"><span class="nav-number">1.2.</span> <span class="nav-text">二、Java如何实现多线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、线程的状态和方法"><span class="nav-number">1.3.</span> <span class="nav-text">三、线程的状态和方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、线程的基本信息和优先级"><span class="nav-number">1.4.</span> <span class="nav-text">四、线程的基本信息和优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、线程的同步和死锁"><span class="nav-number">1.5.</span> <span class="nav-text">五、线程的同步和死锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、生产者消费者模式"><span class="nav-number">1.6.</span> <span class="nav-text">六、生产者消费者模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、任务调度"><span class="nav-number">1.7.</span> <span class="nav-text">七、任务调度</span></a></li></ol></li></ol></div>
             
 
           </div>
