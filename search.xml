@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Java职业需求技术详解]]></title>
-    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
-      <categories>
-        <category>求职</category>
-      </categories>
-      <tags>
-        <tag>求职</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java三层软件体系架构]]></title>
     <url>%2F2019%2F06%2F15%2FSpringBoot%2F</url>
     <content type="text"><![CDATA[SpringBoot]]></content>
@@ -24,6 +13,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java职业需求技术详解]]></title>
+    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
+      <categories>
+        <category>求职</category>
+      </categories>
+      <tags>
+        <tag>求职</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java实习要求]]></title>
     <url>%2F2019%2F06%2F13%2Fjava%E5%AE%9E%E4%B9%A0%E8%A6%81%E6%B1%82%E6%B1%87%E6%80%BB%2F</url>
     <content type="text"><![CDATA[熟悉JAVAEE规范， 精通Java及Web的开发和应用； ​ 理解io、多线程、集合等基础框架， 精通原生Javascript，具备熟练使用jquery，easyui的能力； 掌握CSS，HTML以及Javascrip、Flash、Ajax、WAP中任何一种或几种技术； 熟悉至少两门后台语言如JSP、PHP、ASP等 熟悉前后端性能优化， 熟悉数据结构算法； ​ 熟悉常用设计模式， 熟悉NIO框架Netty优先考虑 熟练掌握Java及面向对象设计开发，理解io、多线程、集合等基础框架，熟悉常用设计模式 ​ 熟悉redis，MongoDb,Memcache等nosql数据库， ​ Oracle，mysql，postgresql关系型数据至少掌握一个； 熟悉hadoop生态系统和设计原理； ​ 数据库的配置和性能优化 数据可视化 SQLite 熟练使用MongoDb,mysql数据库，了解数据库的配置和性能优化 熟悉高并发、高性能的分布式系统的设计及应用、调优。 能对分布式常用技术进行合理应用，有高并发应用开发经验者优先； 了解AOP、分布式计算、缓存、消息、搜索等知识； 有spring/mybatis/netty/mina等开源框架经验者优先； 对网站系统（如论坛、社区等）性能优化有所研究，在实际项目中有经验者优先； 熟悉Tomcat、JBoss、Websphere等应用服务器； 熟悉spring boot、devops、微服务、Docker、K8s、http、nginx等技术和框架； 有spring，springMVC，mybatis，habinate开发经验，了解springboot开发框架 熟悉python/shell等脚本语言， 对网络通讯技术有深入了解 ​ 掌握Linux 操作系统原理及基本操作； 熟悉1个以上开源消息中间件； 掌握Linux 操作系统原理及基本操作；熟悉shell等脚本语言]]></content>
@@ -32,6 +32,17 @@
       </categories>
       <tags>
         <tag>求职</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git的常用操作命令]]></title>
+    <url>%2F2019%2F02%2F12%2FGit%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[情景一：有个地方搞错了，要重新来过git自带时光机效果 1git reflog //列出在Git上所有操作记录，可以找出HEAD@&#123;index&#125;前面对应的操作索引 1git reset HEAD@&#123;index&#125; //index表示索引值，值越小，更改时间越近 情景二：想改个小地方，但代码不小心提交了1git add . //添加改好的代码到暂存区 1git commit --amend //将刚刚的改动合并到最后一次提交上 情景三：提交历史写的不好，要重写一下1git commit --amend 情节四：不小心把新分支的代码提交到主分支上了1git branch someNewBranchName //创建一个新分支 1git reset HEAD~ --hard //把刚才的提交从主分支中移除 注：以上代码只会切换到最后一条提交记录上 小结123456789101112131415161718192021222324git init //在项目中创建一个.git存储库（repo）git add (想要添加的文件。例如：.[项目文件夹下的所有文件]；*.html[项目文件夹下的所有.html文件]) //将指定文件放入暂存区git status //显示暂存区中的文件，以及进行了修改需要放入暂存区的文件git reset (文件名) //想要从暂存区中删除的文件git rm -cached (文件名) //从暂存区删除该文件，并将其设置为未跟踪git commit -m &quot;(提交时的描述信息)&quot; //暂存区提交到本地库git branch （新分支名称） //创建新分支，就是前一个分支代码库的直接副本git checkout &quot;(要检查的分支名称)&quot; //检查创建的分区，并在这个分支下工作git remote //和项目关联的远程存储库列表git push -u origin master //初次将本地库推送到远程库git clone (要克隆的项目的地址)git pull //从远处库获取最新版本]]></content>
+      <categories>
+        <category>项目管理工具</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -63,18 +74,6 @@
     <title><![CDATA[Java三层软件体系架构]]></title>
     <url>%2F2018%2F06%2F15%2FJava%E4%B8%89%E5%B1%82%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%2F</url>
     <content type="text"><![CDATA[Java三层软件体系架构前言：在Java开发中，经常将项目中的类按层次分离。高内聚，低耦合。SSH 一、表现层（Swing AWT） 功能： 数据的录入（告诉后台用户要做什么） 数据的显示 主要技术： jsp freemarker velocity thymelaef 补充MVC可以是三层中的一个表现层框架 二、业务逻辑层（普通Java类）-dto 功能： 执行业务逻辑 主要技术： S 三、数据访问层（JDBC）-dao数据库]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>MVC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java三层软件体系架构]]></title>
-    <url>%2F2018%2F06%2F15%2FGit%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[情景一：有个地方搞错了，要重新来过git自带时光机效果 1git reflog //列出在Git上所有操作记录，可以找出HEAD@&#123;index&#125;前面对应的操作索引 1git reset HEAD@&#123;index&#125; //index表示索引值，值越小，更改时间越近 情景二：想改个小地方，但代码不小心提交了1git add . //添加改好的代码到暂存区 1git commit --amend //将刚刚的改动合并到最后一次提交上 情景三：提交历史写的不好，要重写一下1git commit --amend 情节四：不小心把新分支的代码提交到主分支上了1git branch someNewBranchName //创建一个新分支 1git reset HEAD~ --hard //把刚才的提交从主分支中移除 注：以上代码只会切换到最后一条提交记录上 小结123456789101112131415161718192021222324git init //在项目中创建一个.git存储库（repo）git add (想要添加的文件。例如：.[项目文件夹下的所有文件]；*.html[项目文件夹下的所有.html文件]) //将指定文件放入暂存区git status //显示暂存区中的文件，以及进行了修改需要放入暂存区的文件git reset (文件名) //想要从暂存区中删除的文件git rm -cached (文件名) //从暂存区删除该文件，并将其设置为未跟踪git commit -m &quot;(提交时的描述信息)&quot; //暂存区提交到本地库git branch （新分支名称） //创建新分支，就是前一个分支代码库的直接副本git checkout &quot;(要检查的分支名称)&quot; //检查创建的分区，并在这个分支下工作git remote //和项目关联的远程存储库列表git push -u origin master //初次将本地库推送到远程库git clone (要克隆的项目的地址)git pull //从远处库获取最新版本]]></content>
       <categories>
         <category>后端</category>
       </categories>
