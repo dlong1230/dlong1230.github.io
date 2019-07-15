@@ -2,52 +2,106 @@
 <search>
   <entry>
     <title></title>
-    <url>%2F2019%2F07%2F15%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[设计模式小结每一本设计模式的书都会说，这些都是在讲究如何对修改封闭，对扩展开放的事情。（开闭原则） 设计原则： 1. 找出应用中可能需要改变之处，吧他们独立出来，不要和那些不需要变化的代码混在一起。把变化的部分取出并封装起来，以便以后可以轻易地改动或扩充此部分，而不影响不需要变化的其他部分 2. 针对接口编程（针对超类型【抽象类或接口】编程-多态），而不是针对实现编程 3. 多用组合，少用继承 4. 交互对象之间的设计应该尽量松耦合 5. 动态的将责任附加到对象上 一、 单例模式预备知识：​ 1.线程安全：如果你的代码所在的进程中有多个线程在同时运行，而这些线程可能会同时运行这段代码。如果每次运行结果和单线程运行的结果是一样的，而且其他的变量的值也和预期的是一样的，就是线程安全的。或者说：一个类或者程序所提供的接口对于线程来说是原子操作，或者多个线程之间的切换不会导致该接口的执行结果存在二义性,也就是说我们不用考虑同步的问题，那就是线程安全的。当多个线程访问某个方法时，不管你通过怎样的调用方式或者说这些线程如何交替的执行，我们在主程序中不需要去做任何的同步，这个类的结果行为都是我们设想的正确行为，那么我们就可以说这个类时线程安全的。 ​ 2.对象是类的某个实例 特点：​ 1.例类只能有一个实例（对象实例） ​ 2.单例类必须自己创建自己的唯一实例 ​ 3.单例类必须给其他所有对象提供这一实例 分类：​ 1.懒汉式 ​ 线程安全；调用效率高；不能延时加载，对象即使生成，容易造成资源的浪费。 ​ 2.饿汉式 ​ 3. 双重检查加锁（synchronized同步块） 线程安全；调用效率不高，因为每次调用都需要同步，并发效率低；能延时加载，提高了资源利用率。 ​ 3. 双重检测锁式 ​ 4.静态内部类式 ​ 线程安全]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2F%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E7%9A%84%E5%85%AD%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%2F</url>
-    <content type="text"><![CDATA[面向对象编程的六大设计原则一、单一职责原则一个类或者对象只负责一项职责，尽量设计出功能单一的接口； 二、依赖倒转原则高层模块不应该依赖底层模块具体实现，解耦高层与底层，既面向接口编程，当实现发生变化时，只需提供新的实现类，不需要修改高层模块代码 三、开放封闭原则程序对外扩展开放，对修改关闭；换句话说，当需求发生变化时，我们可以通过添加新模块来满足需求，而不是通过修改原来的实现代码来满足需求 四、]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FSpringBoot%2F</url>
-    <content type="text"><![CDATA[SpringBoot]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>%2F2019%2F07%2F15%2Fjava%E5%AE%9E%E4%B9%A0%E8%A6%81%E6%B1%82%E6%B1%87%E6%80%BB%2F</url>
-    <content type="text"><![CDATA[​ 熟练掌握Java及面向对象设计开发，对Java技术有较深的研究 熟悉JAVAEE规范， 精通Java及Web的开发和应用； ​ 理解io、多线程、集合等基础框架， 精通原生Javascript，具备熟练使用jquery，easyui的能力； 掌握CSS，HTML以及Javascrip、Flash、Ajax、WAP中任何一种或几种技术； 熟悉至少两门后台语言如JSP、PHP、ASP等 熟悉前后端性能优化， 熟悉数据结构算法； ​ 熟悉常用设计模式， 熟悉NIO框架Netty优先考虑 熟练掌握Java及面向对象设计开发，理解io、多线程、集合等基础框架，熟悉常用设计模式 ​ 熟悉redis，MongoDb,Memcache等nosql数据库， ​ Oracle，mysql，postgresql关系型数据至少掌握一个； 熟悉hadoop生态系统和设计原理； ​ 数据库的配置和性能优化 数据可视化 SQLite 熟练使用MongoDb,mysql数据库，了解数据库的配置和性能优化 熟悉高并发、高性能的分布式系统的设计及应用、调优。 能对分布式常用技术进行合理应用，有高并发应用开发经验者优先； 了解AOP、分布式计算、缓存、消息、搜索等知识； 有spring/mybatis/netty/mina等开源框架经验者优先； 对网站系统（如论坛、社区等）性能优化有所研究，在实际项目中有经验者优先； 熟悉Tomcat、JBoss、Websphere等应用服务器； 熟悉spring boot、devops、微服务、Docker、K8s、http、nginx等技术和框架； 有spring，springMVC，mybatis，habinate开发经验，了解springboot开发框架 熟悉python/shell等脚本语言， 对网络通讯技术有深入了解 ​ 掌握Linux 操作系统原理及基本操作； 熟悉1个以上开源消息中间件； 掌握Linux 操作系统原理及基本操作；熟悉shell等脚本语言]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FJava%E4%B8%89%E5%B1%82%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Java三层软件体系架构前言：在Java开发中，经常将项目中的类按层次分离。高内聚，低耦合。SSH 一、表现层（Swing AWT） 功能： 数据的录入（告诉后台用户要做什么） 数据的显示 主要技术： jsp freemarker velocity thymelaef 补充MVC可以是三层中的一个表现层框架 二、业务逻辑层（普通Java类）-dto 功能： 执行业务逻辑 主要技术： S 三、数据访问层（JDBC）-dao数据库]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FJava%E5%9F%BA%E7%A1%80%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[Java基础小结Java的平台无关性： 平台：操作系统+处理器（机器码） 在操作系统之上提供JRE（JavaRuntimeEnvironment）——JVM（字节码指令），类库，核心文件 Java内置对多线程的支持，区别于C++必须调用操作系统的多线程功能 类的动态加载 JavaEE较JavaSE增加了附加类库，以便支持目录管理、交易管理和企业级消息处理功能 JDK各个子目录的作用： 安装JDK的过程会额外提供一个JRE JDK的开发工具在bin目录 Java运行环境在jre（JDK子目录）目录中，包括JVM，类库，其他支持Java编程语言编写的程序的文件 开发工具所需的其他类库和支持文件一般放在lib子目录中 include中存放支持Java本机界面、JVM工具界面以及Java平台的其他功能进行本机代码编程的头文件 src.zip中放的是类库的源文件 配置环境变量的目的： PATH：为了在任何目录中使用编辑器（javac.exe）和解释器(java.exe) JAVA_HOME：便于后期版本更新的维护；便于其他软件寻找在本机JDK（Tomcat等） ClassPath：指明JAVA运行环境JRE搜索.class文件的路径。 所以，百度中的CLASS变量配置第一个经常是“.”,表示的就是先在当前目录中寻找。 参考博客：https://www.cnblogs.com/Wjh794010585/articles/6582079.html 反编译器：javap.exe 基本数据类型及其在内存中的状态： 逻辑类型：boolean（1字节（为存储）或4字节（为效率）） 整数类型：byte,short,int,long（补码——正数：与原码相同；负数：绝对值的二进制形式“按位求反再加1”） 字符类型：char（字符相对应的Unicode表中的排序位置放到存储单元中的） 浮点类型：float(必须带F),double（指数形式存储：m*10^n[men]） 引用数据类型：数组，对象，接口 Java中的数组属于引用变量，通过数组变量存储元素的首地址，再通过索引值查找元素 Java允许用int型变量的值指定数组元素个数。例如：int size=10；double [] num=new double[size]; instanceof（双目运算符）：判断左边的对象是否是右边类的子类 “&gt;&gt;&gt;”无符号右移 switch表达是的值可以是byte，short，int，char；jdk1.7加入的新特性可以支持String类型的数据。 成员变量只能在方法体中被操作 局部变量没有初值，所以在使用之前必须被初始化具体值 UML图层次 名字层:如果名字是斜体字，表明该类是抽象类 变量层（属性层·）：变量名：类型 方法层（操作层）：方法名字（参数列表）：类型 构造方法没有类型， 创建对象（new）时做了两件事： 为类的属性分配内存 返回一个地址引用，使对象可以操作变量 补充：A a = new A();这句话创建了两个对象，一个是A类的实体对象（堆），另一个是该对象的引用变量a（栈）。 Java总是采用值传递（就是将存储单元中的内容传给调用函数中的那个参数，），即无论是参数是基本数据类型（存储单元中存的是值）还是引用数据类型（存储单元中存的是实际对象的地址），方法中参数变量的值总是调用者指定值的拷贝 系统会自动为程序引入java.lang包中的类 访问限制修饰符按访问权限从高到低的排列顺序是：public，protected，友好的，private 当成员变量的名字和从父类继承来的相同（类型可以不同），则会隐藏父类的成员变量 重写父类的方法是可以提高方法的访问权限 如果子类重写了父类的静态方法，那么子类对象的上转型对象不能调用子类重写的静态方法，只能调用父类的构造方法 上转型对象操作子类继承的方法或子类重写的子类方法，起作用等价于子类对象去调用这些方法（造成了继承的多态性） 面向抽象编程思想（开闭原则） 接口与抽象类 如果一个类要被声明为static的，只有一种情况，就是静态内部类。 静态内部类跟静态方法一样，只能访问静态的成员变量和方法，不能访问非静态的方法和属性，但是普通内部类可以访问任意外部类的成员变量和方法 静态内部类可以声明普通成员变量和方法，而普通内部类不能声明static成员变量和方法。 静态内部类可以单独初始化: 1Inner i = new Outer.Inner(); ​ 普通内部类初始化： 12Outer o = new Outer();Inner i = o.new Inner(); 对于静态类总结是： 如果类的构造器或静态工厂中有多个参数，设计这样类时，最好使用Builder模式，特别是当大多数参数都是可选的时候。 如果现在不能确定参数的个数，最好一开始就使用构建器即Builder模式。 断言语句：assert booleanException:messageException;当booleanException的值为true时，继续执行程序，反之，结束程序，并输出messageException的内容。 利用java解释器启用断言语句：java -ea mainClass。 正则表达式：包含特殊字符（元字符）的字符序列 StringTokenizer类把分解出的全部单词都存放在其对象实体中，Scanner类仅仅存放怎么样获取单词的分隔标记 事件处理： 事件源（event） 监视器（listener） 处理时间的接口 流（源和目的地） 输入流（InputStream） 文件（磁盘） 内存 ​ 数组流：ByteArrayInputStream 键盘 显示器窗口 输出流（OutputStream） 文件（磁盘） 内存 键盘 显示器窗口 随机流（对于文件：RandomAccessFile） 线程被新建之后便开始拥有相应的内存空间和其他资源；但是只有在调用了start方法之后，JVM开始管理这个线程（开始加入排队） 线程中断的原因： JVM将CPU资源从当前线程切换给其他线程 线程使用CPU过程中使用了sleep方法，线程进入休眠状态，等待指定时间过后或休眠线程调用interrupt方法，线程重新加入到线程队列中 线程使用CPU过程中使用了wait方法，线程进入等待状态，等候其他线程调用notify方法通知其重新排队。注意：wait(),notify(),notifyAll()方法是Object类中的final方法（被所有类继承且无法被重写） 线程操作时引起阻塞 线程的死亡状态时会释放实体，即释放分配给线程对象的内存 目标对象和线程的关系： 完全解耦：目标对象不包含对线程对象的引用 目标对象组合线程（弱耦合）：将线程对象作为自己的成员 线程同步机制：当一个线程A使用synchronized方法时，其他线程想使用这个synchronized方法时就必须等待 线程联合（join()） 如果线程A在占有CPU资源的期间，一旦联合了B线程，那么A只有在B结束之后才会重新进入排队 守护线程：setDaemon（true）——当其他线程结束后，即使守护线程没有执行完，也会立即结束。 URL：uniform resource locator统一资源定位符 DNS：域名解析服务器（域名&lt;——&gt;ip地址） RMI：Remote Method Invocation远程调用 Stub存根 远程服务器利用rmic命令可生成存根文件 远程服务器在创建远程对象前需要先启动注册rmiregistry class 名称&lt;泛型列表&gt;]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FJava%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[Java基础部分笔记1.整数常量默认时int型，如果要将长整型常量赋值给一个变量，就需要在常量后面加上L/l 如：long m=70000000000L; 浮点常量默认时double型 如：float m=3.14F;2.浮点类型表示 十进制数形式，如:3.14 科学记数法形式，如314E-2 //31410^(-2)=3.143.BigDecimal 类文件：java.math.BigDecimal 推荐的构造方法：public BigDecimal(String val) 解决的问题：java的浮点运算不精确 使用时常用的函数：Double.toString(double) 注意：BigDecimal都是不可变的（immutable）的，在进行每一步运算时，都会产生一个新的对象，所以在做加减乘除运算时千万要保存操作后的值。（参考链接：https://www.cnblogs.com/LeoBoy/p/6056394.html） 补充解释:JAVA中float型和double型是不能被计算机精确存储的。以double类型数据1.10举例计算机如何将浮点型数据转换成二进制存储： 整数部分：1，转换成二进制1 小数部分：0.1 0.12=0.2取整数部分0，基数=0.2 0.22=0.4取整数部分0，基数=0.4 0.42=0.8取整数部分0，基数=0.8 0.82=1.6取整数部分1，基数=1.6-1=0.6 0.62=1.2取整数部分1，基数=1.2-1=0.2 0.22=0.4取整数部分0，基数=0.4 ··· 直至基数为0。 1.1用二进制表示为：1.000110……，即0.1 = 02^(-1)+02^(-2)+02^(-3)+1*2^(-4)+……而double型的小数部分只有52位，当向后计算 52位后基数还不为0时，后面的部分只能舍弃，从这里可以看出float型、double型并不能准确表示每一位小数。4.关系运算符instanceof function:判断左边的对象是否是右边类的子类 return：true/false5.(表达式)? x : y6.短路与（&amp;&amp;）和短路或（||）采用短路的方式。从左到右计算，如果只通过运算符左边的操作数就能够确定该逻辑表达式的值，则不会继续计算运算符右边的操作数，提高效率。7.左移运算符，左移1位相当于乘2；右移运算符，右移1位相当于除2取商8.“+”运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接9.java.util.Scanner类的scanner获取键盘输入10.java.lang包下的Math类中Math.random()生成【0，1）之间的任意一个随机数11.语句块中的变量只在语句块中有作用 *12.通过对象调用普通方法（static） 13.值传递，引用传递14.方法的重载（overload）15.递归： 1.定义递归头（什么时候自己不调用自己） 2.递归体（什么时候调用自己）16.return结束函数运行17.this代表创建好的对象*18.构造方法的第一句总是super（）【编译器会自动添加】，即构造函数在执行时会首先调用父类的构造函数。19.static静态，存在于方法区从属于类信息，存放在方法区中*20.静态初始化块:类初始化是执行，在对象之前运行，上述到object类21.JAVA中常见的包： java.lang:包含一些Java语言的核心类，如String、Math、Integer、System和Thread，提供常用功能。 java.awt:包含了构成抽象窗口工具集（abstract window toolkits）的多个类，这些类被用来构建和管理应用程序的图形用户界面(GUI)。 java.net:包含执行与网络相关的操作的类。 java.io:包含能提供多种输入/输出功能的类。 java.util：包含一些实用工具类，如定义系统特性、使用与日期日历相关的函数。22.如果导入两个同名的类，只能用包名+类名来显式调用相关类23.静态导入：导入类的静态属性24.访问控制字：private（仅自己这个类能用）&lt;default（表示没有修饰符，只能在同一个包中杯访问）&lt;protected（同一个类以及其他包中的子类）&lt;public(不同的包也能访问)25.javabean：遵循了特殊写法的java类26.多态：通过调用父类来构造子类构造函数27.对象的转型：向上自动转型，向下强制转型。只能上下级之间转换，同级之间无法转换28.final：（1）修饰变量：变量只能被赋一次植 （2）修饰方法：方法无法被子类重写 （3）修饰类：类不能被继承29.抽象类和抽象方法（有抽象方法的类叫抽象类）：abstract，抽象类只能被继承，无法被实现。抽象方法只被声明，并没有实现30.接口：只包含属性，接口中的所有方法都是抽象方法（public abstract）；可以实现多继承；接口中只能定义常量（public static final）；implements31.静态类不依赖于对象32.String是不可变字符序列33.子类异常要写在父类异常之前 String不可变字符序列,以下两个是可变字符序列（都是AbstractStringBuilder的子类）： StringBuilder：线程不安全，效率高（一般用它） StringBuffer：线程安全，效率低 可变字符序列和不可变字符序列：对象数量（内存占用） 计算机标准纪元：1970年1月1日0：0:0 DateFormat抽象类——&gt;SimpleDateFormat实现类：时间和字符串之间的转换 Calendar日历抽象类——&gt;GregorianCalender实现类： enum枚举（常量） *内存分析:JVM: 栈Stack:由线程创建（一对一）。每个方法会被分配一个栈帧。数据“先进后出” 堆heap：JVM只有一个堆，用于存储对象new，被所有线程共享。&lt;方法区method area&gt; 面试前的三大步骤：（2小时） 1.了解公司基本情况（工商信息网，天眼） 2.侧重于那一块技术，重点学习（招聘广告） 3.研究该公司的产品，提出问题 1.myEclipse重构变量名快捷键：Alt+Shift+R]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2019%2F07%2F15%2FJava%E5%A4%9A%E7%BA%BF%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP 进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频 线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音 二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​ 重写run方法，调用实现类对象的start方法启动线程。例如：st.start()。 实现Runnable接口： ​ 重写run方法，实现实现类对象，通过调用Thread对象（代理类对象）的start方法启动线程。例如：new Thread(st).start()。 实现Callable接口： ​ JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图： 数据的并发问题：多个代理抢夺同一份资源 三、线程的状态和方法类比足球比赛中球员的状态 新建（new）：球员入选23人名单 线程对象一旦创建，就进入了新生状态。线程有了自己的工作空间 就绪（runnable）：球员入场，去抢球 start 阻塞事件解除 yield（礼让）：将线程从运行状态转入就绪状态，静态方法，写在线程体中。 jvm切换其他线程 运行（running）：带球奔跑 CPU调度时发生（无法人为干预） 阻塞（blocked）：球被抢了 sleep（暂停）：抱着资源睡觉，不会释放锁 wait：等在一边，此时别人可以使用资源 join（插队）:合并线程，对象的成员方法，阻塞所在的线程体 read/write 死亡（dead）：球员下场 代码正常执行完毕 强制结束（已过时） 加入boolean标识，标识线程体是否可以运行 四、线程的基本信息和优先级线程的分类： 用户线程 守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程 线程的其他常用方法： 线程调度器按照优先级将线程调入CPU 注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行； 五、线程的同步和死锁线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程） 同步技术原理 线程安全解决方案： 同步代码块： 格式：synchronized(“obj”){ ​ 访问了共享数据的代码； ​ } 锁对象：obj（定义的任意一个对象，在run方法外创建） 同步方法： 格式：“修饰符” synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：实现类对象，即this。 静态同步方法（优先于对象存在）： 格式：“修饰符” static synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：本类的class属性（class文件对象） Lock锁： JDK1.5之后出现在java.util.concurrent.locks包中的Lock接口（实现类为ReentrantLock）提供了一种新的锁机制。 格式：在成员位置创建ReentrantLock对象；在访问共享数据代码前使用方法lock()；在访问共享数据代码后使用方法unlock()。 补充： 死锁的产生：多个线程各自占有一些共享资源，并且相互等待资源【多个操作者（N&gt;=2）争夺多个资源（M&gt;2）,而且N&gt;=M】。当某一个同步块中同时拥有两个以上对象的锁是，就可能会发生死锁问题。 死锁的解决： 互斥条件：一个资源每次只能被一个进程使用 请求与保持条件：一个进程因请求资源二阻塞时，对以获得的资源保持不放 不剥夺条件：进程以获得的资源，在使用完之前，不能强行剥夺 循环等待条件：若干进程之间形成一种头尾相接的循环等待资源关系 六、生产者消费者模式七、任务调度]]></content>
+    <content type="text"><![CDATA[--- title: Java实习要求汇总 date: 2019-6-15 20:13:14 tags: - 求职 categories: 求职熟悉JAVAEE规范， 精通Java及Web的开发和应用； ​ 理解io、多线程、集合等基础框架， 精通原生Javascript，具备熟练使用jquery，easyui的能力； 掌握CSS，HTML以及Javascrip、Flash、Ajax、WAP中任何一种或几种技术； 熟悉至少两门后台语言如JSP、PHP、ASP等 熟悉前后端性能优化， 熟悉数据结构算法； ​ 熟悉常用设计模式， 熟悉NIO框架Netty优先考虑 熟练掌握Java及面向对象设计开发，理解io、多线程、集合等基础框架，熟悉常用设计模式 ​ 熟悉redis，MongoDb,Memcache等nosql数据库， ​ Oracle，mysql，postgresql关系型数据至少掌握一个； 熟悉hadoop生态系统和设计原理； ​ 数据库的配置和性能优化 数据可视化 SQLite 熟练使用MongoDb,mysql数据库，了解数据库的配置和性能优化 熟悉高并发、高性能的分布式系统的设计及应用、调优。 能对分布式常用技术进行合理应用，有高并发应用开发经验者优先； 了解AOP、分布式计算、缓存、消息、搜索等知识； 有spring/mybatis/netty/mina等开源框架经验者优先； 对网站系统（如论坛、社区等）性能优化有所研究，在实际项目中有经验者优先； 熟悉Tomcat、JBoss、Websphere等应用服务器； 熟悉spring boot、devops、微服务、Docker、K8s、http、nginx等技术和框架； 有spring，springMVC，mybatis，habinate开发经验，了解springboot开发框架 熟悉python/shell等脚本语言， 对网络通讯技术有深入了解 ​ 掌握Linux 操作系统原理及基本操作； 熟悉1个以上开源消息中间件； 掌握Linux 操作系统原理及基本操作；熟悉shell等脚本语言]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F07%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Java职业需求技术详解]]></title>
+    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
+      <categories>
+        <category>求职</category>
+      </categories>
+      <tags>
+        <tag>求职</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java三层软件体系架构]]></title>
+    <url>%2F2019%2F06%2F15%2FSpringBoot%2F</url>
+    <content type="text"><![CDATA[SpringBoot]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>MVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java三层软件体系架构]]></title>
+    <url>%2F2018%2F08%2F15%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[设计模式小结每一本设计模式的书都会说，这些都是在讲究如何对修改封闭，对扩展开放的事情。（开闭原则） 设计原则： 1. 找出应用中可能需要改变之处，吧他们独立出来，不要和那些不需要变化的代码混在一起。把变化的部分取出并封装起来，以便以后可以轻易地改动或扩充此部分，而不影响不需要变化的其他部分 2. 针对接口编程（针对超类型【抽象类或接口】编程-多态），而不是针对实现编程 3. 多用组合，少用继承 4. 交互对象之间的设计应该尽量松耦合 5. 动态的将责任附加到对象上 一、 单例模式预备知识：​ 1.线程安全：如果你的代码所在的进程中有多个线程在同时运行，而这些线程可能会同时运行这段代码。如果每次运行结果和单线程运行的结果是一样的，而且其他的变量的值也和预期的是一样的，就是线程安全的。或者说：一个类或者程序所提供的接口对于线程来说是原子操作，或者多个线程之间的切换不会导致该接口的执行结果存在二义性,也就是说我们不用考虑同步的问题，那就是线程安全的。当多个线程访问某个方法时，不管你通过怎样的调用方式或者说这些线程如何交替的执行，我们在主程序中不需要去做任何的同步，这个类的结果行为都是我们设想的正确行为，那么我们就可以说这个类时线程安全的。 ​ 2.对象是类的某个实例 特点：​ 1.例类只能有一个实例（对象实例） ​ 2.单例类必须自己创建自己的唯一实例 ​ 3.单例类必须给其他所有对象提供这一实例 分类：​ 1.懒汉式 ​ 线程安全；调用效率高；不能延时加载，对象即使生成，容易造成资源的浪费。 ​ 2.饿汉式 ​ 3. 双重检查加锁（synchronized同步块） 线程安全；调用效率不高，因为每次调用都需要同步，并发效率低；能延时加载，提高了资源利用率。 ​ 3. 双重检测锁式 ​ 4.静态内部类式 ​ 线程安全]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>MVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[面向对象编程的六大设计原则]]></title>
+    <url>%2F2018%2F07%2F15%2F%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E7%9A%84%E5%85%AD%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%2F</url>
+    <content type="text"><![CDATA[面向对象编程的六大设计原则一、单一职责原则一个类或者对象只负责一项职责，尽量设计出功能单一的接口； 二、依赖倒转原则高层模块不应该依赖底层模块具体实现，解耦高层与底层，既面向接口编程，当实现发生变化时，只需提供新的实现类，不需要修改高层模块代码 三、开放封闭原则程序对外扩展开放，对修改关闭；换句话说，当需求发生变化时，我们可以通过添加新模块来满足需求，而不是通过修改原来的实现代码来满足需求 四、]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>面向对象设计</tag>
+        <tag>设计原则</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java三层软件体系架构]]></title>
+    <url>%2F2018%2F06%2F15%2FJava%E4%B8%89%E5%B1%82%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[Java三层软件体系架构前言：在Java开发中，经常将项目中的类按层次分离。高内聚，低耦合。SSH 一、表现层（Swing AWT） 功能： 数据的录入（告诉后台用户要做什么） 数据的显示 主要技术： jsp freemarker velocity thymelaef 补充MVC可以是三层中的一个表现层框架 二、业务逻辑层（普通Java类）-dto 功能： 执行业务逻辑 主要技术： S 三、数据访问层（JDBC）-dao数据库]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>MVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java多线程]]></title>
+    <url>%2F2017%2F08%2F15%2FJava%E5%A4%9A%E7%BA%BF%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP 进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频 线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音 二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​ 重写run方法，调用实现类对象的start方法启动线程。例如：st.start()。 实现Runnable接口： ​ 重写run方法，实现实现类对象，通过调用Thread对象（代理类对象）的start方法启动线程。例如：new Thread(st).start()。 实现Callable接口： ​ JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图： 数据的并发问题：多个代理抢夺同一份资源 三、线程的状态和方法类比足球比赛中球员的状态 新建（new）：球员入选23人名单 线程对象一旦创建，就进入了新生状态。线程有了自己的工作空间 就绪（runnable）：球员入场，去抢球 start 阻塞事件解除 yield（礼让）：将线程从运行状态转入就绪状态，静态方法，写在线程体中。 jvm切换其他线程 运行（running）：带球奔跑 CPU调度时发生（无法人为干预） 阻塞（blocked）：球被抢了 sleep（暂停）：抱着资源睡觉，不会释放锁 wait：等在一边，此时别人可以使用资源 join（插队）:合并线程，对象的成员方法，阻塞所在的线程体 read/write 死亡（dead）：球员下场 代码正常执行完毕 强制结束（已过时） 加入boolean标识，标识线程体是否可以运行 四、线程的基本信息和优先级线程的分类： 用户线程 守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程 线程的其他常用方法： 线程调度器按照优先级将线程调入CPU 注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行； 五、线程的同步和死锁线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程） 同步技术原理 线程安全解决方案： 同步代码块： 格式：synchronized(“obj”){ ​ 访问了共享数据的代码； ​ } 锁对象：obj（定义的任意一个对象，在run方法外创建） 同步方法： 格式：“修饰符” synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：实现类对象，即this。 静态同步方法（优先于对象存在）： 格式：“修饰符” static synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：本类的class属性（class文件对象） Lock锁： JDK1.5之后出现在java.util.concurrent.locks包中的Lock接口（实现类为ReentrantLock）提供了一种新的锁机制。 格式：在成员位置创建ReentrantLock对象；在访问共享数据代码前使用方法lock()；在访问共享数据代码后使用方法unlock()。 补充： 死锁的产生：多个线程各自占有一些共享资源，并且相互等待资源【多个操作者（N&gt;=2）争夺多个资源（M&gt;2）,而且N&gt;=M】。当某一个同步块中同时拥有两个以上对象的锁是，就可能会发生死锁问题。 死锁的解决： 互斥条件：一个资源每次只能被一个进程使用 请求与保持条件：一个进程因请求资源二阻塞时，对以获得的资源保持不放 不剥夺条件：进程以获得的资源，在使用完之前，不能强行剥夺 循环等待条件：若干进程之间形成一种头尾相接的循环等待资源关系 六、生产者消费者模式七、任务调度]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java基础部分笔记]]></title>
+    <url>%2F2017%2F07%2F15%2FJava%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[Java基础部分笔记1.整数常量默认时int型，如果要将长整型常量赋值给一个变量，就需要在常量后面加上L/l 如：long m=70000000000L; 浮点常量默认时double型 如：float m=3.14F;2.浮点类型表示 十进制数形式，如:3.14 科学记数法形式，如314E-2 //31410^(-2)=3.143.BigDecimal 类文件：java.math.BigDecimal 推荐的构造方法：public BigDecimal(String val) 解决的问题：java的浮点运算不精确 使用时常用的函数：Double.toString(double) 注意：BigDecimal都是不可变的（immutable）的，在进行每一步运算时，都会产生一个新的对象，所以在做加减乘除运算时千万要保存操作后的值。（参考链接：https://www.cnblogs.com/LeoBoy/p/6056394.html） 补充解释:JAVA中float型和double型是不能被计算机精确存储的。以double类型数据1.10举例计算机如何将浮点型数据转换成二进制存储： 整数部分：1，转换成二进制1 小数部分：0.1 0.12=0.2取整数部分0，基数=0.2 0.22=0.4取整数部分0，基数=0.4 0.42=0.8取整数部分0，基数=0.8 0.82=1.6取整数部分1，基数=1.6-1=0.6 0.62=1.2取整数部分1，基数=1.2-1=0.2 0.22=0.4取整数部分0，基数=0.4 ··· 直至基数为0。 1.1用二进制表示为：1.000110……，即0.1 = 02^(-1)+02^(-2)+02^(-3)+1*2^(-4)+……而double型的小数部分只有52位，当向后计算 52位后基数还不为0时，后面的部分只能舍弃，从这里可以看出float型、double型并不能准确表示每一位小数。4.关系运算符instanceof function:判断左边的对象是否是右边类的子类 return：true/false5.(表达式)? x : y6.短路与（&amp;&amp;）和短路或（||）采用短路的方式。从左到右计算，如果只通过运算符左边的操作数就能够确定该逻辑表达式的值，则不会继续计算运算符右边的操作数，提高效率。7.左移运算符，左移1位相当于乘2；右移运算符，右移1位相当于除2取商8.“+”运算符两侧的操作数中只要有一个是字符串(String)类型，系统会自动将另一个操作数转换为字符串然后再进行连接9.java.util.Scanner类的scanner获取键盘输入10.java.lang包下的Math类中Math.random()生成【0，1）之间的任意一个随机数11.语句块中的变量只在语句块中有作用 *12.通过对象调用普通方法（static） 13.值传递，引用传递14.方法的重载（overload）15.递归： 1.定义递归头（什么时候自己不调用自己） 2.递归体（什么时候调用自己）16.return结束函数运行17.this代表创建好的对象*18.构造方法的第一句总是super（）【编译器会自动添加】，即构造函数在执行时会首先调用父类的构造函数。19.static静态，存在于方法区从属于类信息，存放在方法区中*20.静态初始化块:类初始化是执行，在对象之前运行，上述到object类21.JAVA中常见的包： java.lang:包含一些Java语言的核心类，如String、Math、Integer、System和Thread，提供常用功能。 java.awt:包含了构成抽象窗口工具集（abstract window toolkits）的多个类，这些类被用来构建和管理应用程序的图形用户界面(GUI)。 java.net:包含执行与网络相关的操作的类。 java.io:包含能提供多种输入/输出功能的类。 java.util：包含一些实用工具类，如定义系统特性、使用与日期日历相关的函数。22.如果导入两个同名的类，只能用包名+类名来显式调用相关类23.静态导入：导入类的静态属性24.访问控制字：private（仅自己这个类能用）&lt;default（表示没有修饰符，只能在同一个包中杯访问）&lt;protected（同一个类以及其他包中的子类）&lt;public(不同的包也能访问)25.javabean：遵循了特殊写法的java类26.多态：通过调用父类来构造子类构造函数27.对象的转型：向上自动转型，向下强制转型。只能上下级之间转换，同级之间无法转换28.final：（1）修饰变量：变量只能被赋一次植 （2）修饰方法：方法无法被子类重写 （3）修饰类：类不能被继承29.抽象类和抽象方法（有抽象方法的类叫抽象类）：abstract，抽象类只能被继承，无法被实现。抽象方法只被声明，并没有实现30.接口：只包含属性，接口中的所有方法都是抽象方法（public abstract）；可以实现多继承；接口中只能定义常量（public static final）；implements31.静态类不依赖于对象32.String是不可变字符序列33.子类异常要写在父类异常之前 String不可变字符序列,以下两个是可变字符序列（都是AbstractStringBuilder的子类）： StringBuilder：线程不安全，效率高（一般用它） StringBuffer：线程安全，效率低 可变字符序列和不可变字符序列：对象数量（内存占用） 计算机标准纪元：1970年1月1日0：0:0 DateFormat抽象类——&gt;SimpleDateFormat实现类：时间和字符串之间的转换 Calendar日历抽象类——&gt;GregorianCalender实现类： enum枚举（常量） *内存分析:JVM: 栈Stack:由线程创建（一对一）。每个方法会被分配一个栈帧。数据“先进后出” 堆heap：JVM只有一个堆，用于存储对象new，被所有线程共享。&lt;方法区method area&gt; 面试前的三大步骤：（2小时） 1.了解公司基本情况（工商信息网，天眼） 2.侧重于那一块技术，重点学习（招聘广告） 3.研究该公司的产品，提出问题 1.myEclipse重构变量名快捷键：Alt+Shift+R]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java三层软件体系架构]]></title>
+    <url>%2F2017%2F07%2F13%2FJava%E5%9F%BA%E7%A1%80%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[Java基础小结Java的平台无关性： 平台：操作系统+处理器（机器码） 在操作系统之上提供JRE（JavaRuntimeEnvironment）——JVM（字节码指令），类库，核心文件 Java内置对多线程的支持，区别于C++必须调用操作系统的多线程功能 类的动态加载 JavaEE较JavaSE增加了附加类库，以便支持目录管理、交易管理和企业级消息处理功能 JDK各个子目录的作用： 安装JDK的过程会额外提供一个JRE JDK的开发工具在bin目录 Java运行环境在jre（JDK子目录）目录中，包括JVM，类库，其他支持Java编程语言编写的程序的文件 开发工具所需的其他类库和支持文件一般放在lib子目录中 include中存放支持Java本机界面、JVM工具界面以及Java平台的其他功能进行本机代码编程的头文件 src.zip中放的是类库的源文件 配置环境变量的目的： PATH：为了在任何目录中使用编辑器（javac.exe）和解释器(java.exe) JAVA_HOME：便于后期版本更新的维护；便于其他软件寻找在本机JDK（Tomcat等） ClassPath：指明JAVA运行环境JRE搜索.class文件的路径。 所以，百度中的CLASS变量配置第一个经常是“.”,表示的就是先在当前目录中寻找。 参考博客：https://www.cnblogs.com/Wjh794010585/articles/6582079.html 反编译器：javap.exe 基本数据类型及其在内存中的状态： 逻辑类型：boolean（1字节（为存储）或4字节（为效率）） 整数类型：byte,short,int,long（补码——正数：与原码相同；负数：绝对值的二进制形式“按位求反再加1”） 字符类型：char（字符相对应的Unicode表中的排序位置放到存储单元中的） 浮点类型：float(必须带F),double（指数形式存储：m*10^n[men]） 引用数据类型：数组，对象，接口 Java中的数组属于引用变量，通过数组变量存储元素的首地址，再通过索引值查找元素 Java允许用int型变量的值指定数组元素个数。例如：int size=10；double [] num=new double[size]; instanceof（双目运算符）：判断左边的对象是否是右边类的子类 “&gt;&gt;&gt;”无符号右移 switch表达是的值可以是byte，short，int，char；jdk1.7加入的新特性可以支持String类型的数据。 成员变量只能在方法体中被操作 局部变量没有初值，所以在使用之前必须被初始化具体值 UML图层次 名字层:如果名字是斜体字，表明该类是抽象类 变量层（属性层·）：变量名：类型 方法层（操作层）：方法名字（参数列表）：类型 构造方法没有类型， 创建对象（new）时做了两件事： 为类的属性分配内存 返回一个地址引用，使对象可以操作变量 补充：A a = new A();这句话创建了两个对象，一个是A类的实体对象（堆），另一个是该对象的引用变量a（栈）。 Java总是采用值传递（就是将存储单元中的内容传给调用函数中的那个参数，），即无论是参数是基本数据类型（存储单元中存的是值）还是引用数据类型（存储单元中存的是实际对象的地址），方法中参数变量的值总是调用者指定值的拷贝 系统会自动为程序引入java.lang包中的类 访问限制修饰符按访问权限从高到低的排列顺序是：public，protected，友好的，private 当成员变量的名字和从父类继承来的相同（类型可以不同），则会隐藏父类的成员变量 重写父类的方法是可以提高方法的访问权限 如果子类重写了父类的静态方法，那么子类对象的上转型对象不能调用子类重写的静态方法，只能调用父类的构造方法 上转型对象操作子类继承的方法或子类重写的子类方法，起作用等价于子类对象去调用这些方法（造成了继承的多态性） 面向抽象编程思想（开闭原则） 接口与抽象类 如果一个类要被声明为static的，只有一种情况，就是静态内部类。 静态内部类跟静态方法一样，只能访问静态的成员变量和方法，不能访问非静态的方法和属性，但是普通内部类可以访问任意外部类的成员变量和方法 静态内部类可以声明普通成员变量和方法，而普通内部类不能声明static成员变量和方法。 静态内部类可以单独初始化: 1Inner i = new Outer.Inner(); ​ 普通内部类初始化： 12Outer o = new Outer();Inner i = o.new Inner(); 对于静态类总结是： 如果类的构造器或静态工厂中有多个参数，设计这样类时，最好使用Builder模式，特别是当大多数参数都是可选的时候。 如果现在不能确定参数的个数，最好一开始就使用构建器即Builder模式。 断言语句：assert booleanException:messageException;当booleanException的值为true时，继续执行程序，反之，结束程序，并输出messageException的内容。 利用java解释器启用断言语句：java -ea mainClass。 正则表达式：包含特殊字符（元字符）的字符序列 StringTokenizer类把分解出的全部单词都存放在其对象实体中，Scanner类仅仅存放怎么样获取单词的分隔标记 事件处理： 事件源（event） 监视器（listener） 处理时间的接口 流（源和目的地） 输入流（InputStream） 文件（磁盘） 内存 ​ 数组流：ByteArrayInputStream 键盘 显示器窗口 输出流（OutputStream） 文件（磁盘） 内存 键盘 显示器窗口 随机流（对于文件：RandomAccessFile） 线程被新建之后便开始拥有相应的内存空间和其他资源；但是只有在调用了start方法之后，JVM开始管理这个线程（开始加入排队） 线程中断的原因： JVM将CPU资源从当前线程切换给其他线程 线程使用CPU过程中使用了sleep方法，线程进入休眠状态，等待指定时间过后或休眠线程调用interrupt方法，线程重新加入到线程队列中 线程使用CPU过程中使用了wait方法，线程进入等待状态，等候其他线程调用notify方法通知其重新排队。注意：wait(),notify(),notifyAll()方法是Object类中的final方法（被所有类继承且无法被重写） 线程操作时引起阻塞 线程的死亡状态时会释放实体，即释放分配给线程对象的内存 目标对象和线程的关系： 完全解耦：目标对象不包含对线程对象的引用 目标对象组合线程（弱耦合）：将线程对象作为自己的成员 线程同步机制：当一个线程A使用synchronized方法时，其他线程想使用这个synchronized方法时就必须等待 线程联合（join()） 如果线程A在占有CPU资源的期间，一旦联合了B线程，那么A只有在B结束之后才会重新进入排队 守护线程：setDaemon（true）——当其他线程结束后，即使守护线程没有执行完，也会立即结束。 URL：uniform resource locator统一资源定位符 DNS：域名解析服务器（域名&lt;——&gt;ip地址） RMI：Remote Method Invocation远程调用 Stub存根 远程服务器利用rmic命令可生成存根文件 远程服务器在创建远程对象前需要先启动注册rmiregistry class 名称&lt;泛型列表&gt;]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
 </search>
