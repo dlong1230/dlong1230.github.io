@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java职业需求技术详解]]></title>
+    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
+      <categories>
+        <category>求职</category>
+      </categories>
+      <tags>
+        <tag>求职</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java三层软件体系架构]]></title>
     <url>%2F2019%2F06%2F15%2FSpringBoot%2F</url>
     <content type="text"><![CDATA[SpringBoot]]></content>
@@ -10,17 +21,6 @@
       <tags>
         <tag>Java</tag>
         <tag>MVC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java职业需求技术详解]]></title>
-    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
-      <categories>
-        <category>求职</category>
-      </categories>
-      <tags>
-        <tag>求职</tag>
       </tags>
   </entry>
   <entry>

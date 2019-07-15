@@ -109,16 +109,16 @@
 <meta property="og:site_name" content="个人博客">
 <meta property="og:description" content="Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP  进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频  线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音    二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​    重写run方法，调用实现类对象的s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
-<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png">
-<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png">
-<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png">
-<meta property="og:image" content="d:%5CMyMarkdownFile%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png">
-<meta property="og:updated_time" content="2019-07-15T06:53:13.033Z">
+<meta property="og:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta property="og:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png">
+<meta property="og:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png">
+<meta property="og:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png">
+<meta property="og:updated_time" content="2019-07-15T16:11:45.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java多线程">
 <meta name="twitter:description" content="Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP  进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频  线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音    二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​    重写run方法，调用实现类对象的s">
-<meta name="twitter:image" content="d:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
+<meta name="twitter:image" content="https://dlong1230.github.io.git/2017/08/15/Java多线程/.%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png">
 
 
 
@@ -413,7 +413,7 @@
 <li><p>进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频</p>
 </li>
 <li><p>线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音</p>
-<p><img src="D:%5CMyMarkdownFile%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="1559640622948"></p>
+<p><img src=".%5C%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.png" alt="1559640622948"></p>
 </li>
 </ol>
 <h2 id="二、Java如何实现多线程"><a href="#二、Java如何实现多线程" class="headerlink" title="二、Java如何实现多线程"></a>二、Java如何实现多线程</h2><ol>
@@ -425,7 +425,7 @@
 </li>
 <li><p>实现Callable接口：</p>
 <p>​    JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图：</p>
-<p><img src="D:%5CMyMarkdownFile%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png" alt="1559644193639"></p>
+<p><img src=".%5C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0Callable%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B.png" alt="1559644193639"></p>
 <p>数据的并发问题：多个代理抢夺同一份资源</p>
 </li>
 </ol>
@@ -467,13 +467,13 @@
 <li>守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程</li>
 </ul>
 <p>线程的其他常用方法：</p>
-<p><img src="D:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" alt="1559736274640"></p>
+<p><img src=".%5C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95.png" alt="1559736274640"></p>
 <p>线程调度器按照优先级将线程调入CPU</p>
 <p>注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行；</p>
 <h2 id="五、线程的同步和死锁"><a href="#五、线程的同步和死锁" class="headerlink" title="五、线程的同步和死锁"></a>五、线程的同步和死锁</h2><p>线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程）</p>
-<p><img src="D:%5CMyMarkdownFile%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" alt="1559995199164"></p>
+<p><img src=".%5C%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png" alt="1559995199164"></p>
 <p>同步技术原理</p>
-<p><img src="D:%5CMyMarkdownFile%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png" alt="1559995791587"></p>
+<p><img src=".%5C%E5%90%8C%E6%AD%A5%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86.png" alt="1559995791587"></p>
 <p>线程安全解决方案：</p>
 <ol>
 <li><p>同步代码块：</p>
