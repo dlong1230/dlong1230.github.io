@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[HTML概述]]></title>
+    <title><![CDATA[CSS学习笔记]]></title>
+    <url>%2F2019%2F07%2F16%2FCSS%2F</url>
+    <content type="text"><![CDATA[CSS学习笔记123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116////////////css:渲染 层叠样式表 作用: 渲染页面 提高工作效率 格式: 选择器&#123;属性:值;属性1:值1;&#125; 后缀名: .css 独立的css(样式)文件 和html元素的整合★ 方式1:内联样式表 通过标签的style属性设置样式 方式2:内部样式表 在当前页面中使用的样式 通过head标签的style子标签导入 例如: &lt;style&gt; #divId2&#123; background-color: #0f0; &#125; &lt;/style&gt; 方式3:外部样式表 有独立的css文件 通过head标签的link子标签导入 例如: &lt;link rel=&quot;stylesheet&quot; href=&quot;css/1.css&quot; type=&quot;text/css&quot;/&gt; 选择器:★ id选择器 要求: html元素必须有id属性且有值 &lt;xxx id=&quot;id1&quot;&gt;&lt;/xxx&gt; css中通过&quot;#&quot;引入,后面加上id的值 #id1&#123;...&#125; class选择器 要求: html元素必须有class属性且有值 &lt;xxx class=&quot;cls1&quot;/&gt; css中通过&quot;.&quot;引入,后面加上class的值 .cls1&#123;...&#125; 元素选择器 直接用元素(标签)名即可 xxx&#123;...&#125; 派生的选择器 属性选择器★ 要求: html元素必须有一个属性不论属性是什么且有值 &lt;xxx nihao=&quot;wohenhao&quot;/&gt; css中通过下面的方式使用 元素名[属性=&quot;属性值&quot;]&#123;....&#125; 例如: xxx[nihao=&quot;wohenhao&quot;]&#123;....&#125; 后代选择器 选择器 后代选择器&#123;...&#125; 在满足第一个选择器的条件下找后代的选择器,给满足条件的元素添加样式 了解的选择器 锚伪类选择器 a:link &#123;color: #FF0000&#125; /* 未访问的链接 */ a:visited &#123;color: #00FF00&#125; /* 已访问的链接 */ a:hover &#123;color: #FF00FF&#125; /* 鼠标移动到链接上 */ a:active &#123;color: #0000FF&#125; /* 选定的链接 */ 选择器使用小结: id选择器:一个元素(标签) class选择器:一类元素 元素选择器:一种元素 属性选择器:元素选择器的特殊用法 使用的时候注意:(了解) 若多个样式作用于一个元素的时候 不同的样式,会叠加 相同的样式,最近原则 若多个选择器作用于一个元素的时候 越特殊优先级越高 id优先级最高//////////////////////属性(了解) 字体 font-family:设置字体(隶书) 设置字体家族 font-size:设置字体大小 font-style:设置字体风格 文本:改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进 color:文本颜色 line-height:设置行高 text-decoration: 向文本添加修饰。 none underline text-align:对齐文本 列表: list-style-type:设置列表项的类型 例如:a 1 实心圆 list-style-image:设置图片最为列表项类型 使用的时候使用 url函数 url(&quot;/i/arrow.gif&quot;); 背景: background-color:设置背景颜色 background-image:设置图片作为背景 url 尺寸: width: height: 浮动: float: 可选值 left right 分类: clear:设置元素的两边是否有其他的浮动元素 值为:both 两边都不允许有浮动元素 display:设置是否及如何显示元素。 none 此元素不会被显示。 block 此元素将显示为块级元素，此元素前后会带有换行符。 inline 默认。此元素会被显示为内联元素，元素前后没有换行符。框模型:(理解) 一个元素外面有padding(内边距) border(边框) margin(外边距) padding:元素和边框的距离 margin:元素最外层的空白 上面这三个属性都有简写的属性 若设置大小的时候 四个值:顺序 上右下左 padding:10px 10px 10px 10px 若只写一个的话 代表四个边使用同一个值 padding:10px 若只写两个个的话 没有定义的用其对象的值 padding:10px 20px 若只写三个个的话 没有定义的用其对象的值 padding:10px 20px 30px border(边框) 还可以设置颜色 风格 简写属性: border:宽度 风格 颜色; border:5px solid red; solid:实线 dashed:虚线 double:双实线]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML学习笔记]]></title>
     <url>%2F2019%2F07%2F16%2FHTML%2F</url>
     <content type="text"><![CDATA[HTML概述需求:在页面展示一些文字信息,需要排版技术分析:html:超文本标签语言html​ 作用:展示 超文本:超越了一般文本,描述文本的字体 颜色 图片 标签:标记 html书写规则: 文件的后缀名 .html(建议) 或者 .htm 标签必须用 &lt;&gt; 引起来 已经定义好的标签 属性 格式: key=”value” 建议属性的值用引号引起来. 不区分大小写 注意: 最好将所有的内容放在一个标签中 有开始标签和结束标签的标签称之为围堵标签 没有结束的标签的称之为空标签 开始标签和结束标签之间的内容称之为标签体. html页面中的注释 标签必须正常嵌套, 标签最好关闭 文件标签:1234567891011html标签: 声明当前网页为html页面 子标签: &lt;head&gt;&lt;/head&gt; &lt;body&gt;&lt;/body&gt; head:用来存放当前页面的重要信息,一般不展示在html页面上 常见的子标签: &lt;title&gt;&lt;/title&gt; 网页的标题 ​ body: ​ 要展示的数据放在body中 标题标签1234567891011标题标签: ​ &lt;hn&gt;&lt;/hn&gt; ​ n取值 :1~6 ​ h1最大 h6最小 ​ 自动换行 且留白 默认加粗 ​ 常用属性: ​ align:对齐方式 ​ left:左 right:右 center:居中 ​ 格式: &lt;h2 align=&quot;center&quot;&gt;&lt;/h2&gt; ​ ////// 字体标签123456789字体标签:(了解)规定文本的字体、字体尺寸、字体颜色。 ​ &lt;font&gt;&lt;/font&gt; ​ 常用属性: ​ face:字体 ​ size:尺寸 ​ color:颜色颜色的取值:(RGB) 方式1: #xxxxxx x为16进制 方式2: 英文单词 段落标签1234567段落标签: &lt;p&gt;&lt;/p&gt;其他标签: &lt;b&gt;&lt;/b&gt; &lt;strong&gt;&lt;/strong&gt;加粗 &lt;i&gt;&lt;/i&gt; 斜体 &lt;hr/&gt; 水平线 &lt;br/&gt; 换行 图片标签1234567891011121314151617图片标签:&lt;img/&gt; 常用属性: ★src:图片的路径 alt:替代文字 title:移上去显示的文字 width:宽 height:高 大小的写法: 像素:123px 百分比:20% 路径的写法: 相对路径: ./ 或者 什么都不写 当前目录 ../ 上一级目录 绝对路径: 带协议的绝对路径: http://www.itheima.com 列表标签12345列表标签: &lt;ol&gt;&lt;/ol&gt; 有序 &lt;ul&gt;&lt;/ul&gt; 无序常用的标签: &lt;li&gt;&lt;/li&gt; 列表项 超链接标签123456超链接标记 &lt;a&gt;&lt;/a&gt; 常用属性: href:跳转路径 target:在那里打开 默认值:_self _blank(在空白页面打开) 表单标签1234567891011121314151617181920212223242526272829303132333435表格标签★ &lt;table&gt;&lt;/table&gt; 常用的子标签 &lt;tr&gt;:行 &lt;tr&gt;&lt;/tr&gt; 常用子标签: &lt;td&gt;:列 &lt;th&gt;:表头单元格 默认居中加粗 注意: 一行必须只有有一个单元格或者一列 table 的常用属性: border:边框 像素值 width: align:表格对齐方式 tr 的常用属性: align:内容对齐 td 的常用属性: align:内容对齐 colspan:跨列合并 值:合并的列数 rowspan:跨行合并步骤分析: 1.常见一个8行1列的表格 2.在第一行 放logo 嵌套一个1行3列的表格 3.第2行 放菜单 4.第3行 放图片 5.第4行 热门商品 嵌套一个2行7列的表格 6.第5行 放广告图片 7.第6行 最新商品 嵌套一个2行7列的表格 8.第7行 放一个图片 9.第8行 两个段落 表单标签12345678表单标签★★★ &lt;form&gt;&lt;/form&gt; 作用: 用来从浏览器端收集用户的信息.步骤分析: 1.在页面中间添加一个表格 2.10行3列表格 3.在表格中添加表单表单子标签 框架标签12345678910111213frameset:框架集(了解) 常用属性: cols:垂直切割 例如: cols=&quot;40%,60%&quot; 例如: cols=&quot;40%,*,10%&quot; rows:水平切割 常见的子标签: frame 注意: 最好和body不要共存frame:具体实现 常用属性: src:展示的页面的url 补充1234567891011补充: 转义字符: 三部分构成 &amp;实体; 掌握的转义字符: &gt; &amp;gt; //great then &lt; &amp;lt; &amp; &amp;amp; 空格 &amp;nbsp; meta 元信息 &lt;meta charset=&quot;UTF-8&quot;&gt;指定浏览器用什么编码打开此页面]]></content>
       <categories>
@@ -20,18 +31,6 @@
       </categories>
       <tags>
         <tag>前端技术概述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java三层软件体系架构]]></title>
-    <url>%2F2019%2F06%2F15%2FSpringBoot%2F</url>
-    <content type="text"><![CDATA[SpringBoot]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>MVC</tag>
       </tags>
   </entry>
   <entry>
