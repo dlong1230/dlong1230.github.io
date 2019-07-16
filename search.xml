@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Java职业需求技术详解]]></title>
-    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
+    <title><![CDATA[HTML概述]]></title>
+    <url>%2F2019%2F07%2F16%2FHTML%2F</url>
+    <content type="text"><![CDATA[HTML概述需求:在页面展示一些文字信息,需要排版技术分析:html:超文本标签语言html​ 作用:展示 超文本:超越了一般文本,描述文本的字体 颜色 图片 标签:标记 html书写规则: 文件的后缀名 .html(建议) 或者 .htm 标签必须用 &lt;&gt; 引起来 已经定义好的标签 属性 格式: key=”value” 建议属性的值用引号引起来. 不区分大小写 注意: 最好将所有的内容放在一个标签中 有开始标签和结束标签的标签称之为围堵标签 没有结束的标签的称之为空标签 开始标签和结束标签之间的内容称之为标签体. html页面中的注释 标签必须正常嵌套, 标签最好关闭 文件标签:1234567891011html标签: 声明当前网页为html页面 子标签: &lt;head&gt;&lt;/head&gt; &lt;body&gt;&lt;/body&gt; head:用来存放当前页面的重要信息,一般不展示在html页面上 常见的子标签: &lt;title&gt;&lt;/title&gt; 网页的标题 ​ body: ​ 要展示的数据放在body中 标题标签1234567891011标题标签: ​ &lt;hn&gt;&lt;/hn&gt; ​ n取值 :1~6 ​ h1最大 h6最小 ​ 自动换行 且留白 默认加粗 ​ 常用属性: ​ align:对齐方式 ​ left:左 right:右 center:居中 ​ 格式: &lt;h2 align=&quot;center&quot;&gt;&lt;/h2&gt; ​ ////// 字体标签123456789字体标签:(了解)规定文本的字体、字体尺寸、字体颜色。 ​ &lt;font&gt;&lt;/font&gt; ​ 常用属性: ​ face:字体 ​ size:尺寸 ​ color:颜色颜色的取值:(RGB) 方式1: #xxxxxx x为16进制 方式2: 英文单词 段落标签1234567段落标签: &lt;p&gt;&lt;/p&gt;其他标签: &lt;b&gt;&lt;/b&gt; &lt;strong&gt;&lt;/strong&gt;加粗 &lt;i&gt;&lt;/i&gt; 斜体 &lt;hr/&gt; 水平线 &lt;br/&gt; 换行 图片标签1234567891011121314151617图片标签:&lt;img/&gt; 常用属性: ★src:图片的路径 alt:替代文字 title:移上去显示的文字 width:宽 height:高 大小的写法: 像素:123px 百分比:20% 路径的写法: 相对路径: ./ 或者 什么都不写 当前目录 ../ 上一级目录 绝对路径: 带协议的绝对路径: http://www.itheima.com 列表标签12345列表标签: &lt;ol&gt;&lt;/ol&gt; 有序 &lt;ul&gt;&lt;/ul&gt; 无序常用的标签: &lt;li&gt;&lt;/li&gt; 列表项 超链接标签123456超链接标记 &lt;a&gt;&lt;/a&gt; 常用属性: href:跳转路径 target:在那里打开 默认值:_self _blank(在空白页面打开) 表单标签1234567891011121314151617181920212223242526272829303132333435表格标签★ &lt;table&gt;&lt;/table&gt; 常用的子标签 &lt;tr&gt;:行 &lt;tr&gt;&lt;/tr&gt; 常用子标签: &lt;td&gt;:列 &lt;th&gt;:表头单元格 默认居中加粗 注意: 一行必须只有有一个单元格或者一列 table 的常用属性: border:边框 像素值 width: align:表格对齐方式 tr 的常用属性: align:内容对齐 td 的常用属性: align:内容对齐 colspan:跨列合并 值:合并的列数 rowspan:跨行合并步骤分析: 1.常见一个8行1列的表格 2.在第一行 放logo 嵌套一个1行3列的表格 3.第2行 放菜单 4.第3行 放图片 5.第4行 热门商品 嵌套一个2行7列的表格 6.第5行 放广告图片 7.第6行 最新商品 嵌套一个2行7列的表格 8.第7行 放一个图片 9.第8行 两个段落 表单标签12345678表单标签★★★ &lt;form&gt;&lt;/form&gt; 作用: 用来从浏览器端收集用户的信息.步骤分析: 1.在页面中间添加一个表格 2.10行3列表格 3.在表格中添加表单表单子标签 框架标签12345678910111213frameset:框架集(了解) 常用属性: cols:垂直切割 例如: cols=&quot;40%,60%&quot; 例如: cols=&quot;40%,*,10%&quot; rows:水平切割 常见的子标签: frame 注意: 最好和body不要共存frame:具体实现 常用属性: src:展示的页面的url 补充1234567891011补充: 转义字符: 三部分构成 &amp;实体; 掌握的转义字符: &gt; &amp;gt; //great then &lt; &amp;lt; &amp; &amp;amp; 空格 &amp;nbsp; meta 元信息 &lt;meta charset=&quot;UTF-8&quot;&gt;指定浏览器用什么编码打开此页面]]></content>
       <categories>
-        <category>求职</category>
+        <category>前端技术</category>
       </categories>
       <tags>
-        <tag>求职</tag>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[前端开发技术概述]]></title>
+    <url>%2F2019%2F07%2F16%2F%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0%2F</url>
+    <content type="text"><![CDATA[Web前端技术综述Web工作原理客户端浏览器：发送http（Hypertext Transfer Protocol）请求 web服务器：响应客户端请求，将用户所需的html文本、图片和构成该网页的一切文件发送回用户 应用服务器：响应web服务器的数据查询要求（ASP、PHP、JSP），从数据库系统中查询数据 Web前端开发技术 (X)HTML：超文本标记语言，指定web页面的结构（骨架） CSS：层叠样式表，将文档表现层的样式设计独立于文档之外 JavaScript（JS）：基于对象和事件驱动并聚友相对安全性的客户端脚本语言，添加动态功能，为服务器端脚本语言提供数据验证的基本功能 ​ - 核心 ​ - DOM（文档对象模型）： ​ - BOM（浏览器对象模型）： AJAX：异步JavaScript和XML。按需取数据。 JQuery：跨浏览器的JavaScript库，简化HTML和JavaScript之间的操作 附加知识点： url（统一资源定位符）：协议类型://服务器地址（端口号）/路径/文件名 常见的协议类型： http：超文本传输协议 https：用加密传输的超文本传输协议 ftp：文件传输协议 mailto：电子邮件地址 ldap：轻量目录访问协议 news：Usenet新闻组 file：当地计算机或网上分享的文件 gopher：Internet查找协议 ​]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端技术概述</tag>
       </tags>
   </entry>
   <entry>
@@ -21,6 +32,17 @@
       <tags>
         <tag>Java</tag>
         <tag>MVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java职业需求技术详解]]></title>
+    <url>%2F2019%2F06%2F15%2FJava%E8%81%8C%E4%B8%9A%E9%9C%80%E6%B1%82%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[Java职业需求技术详解DevOps UI框架 orm工具 熟悉微服务、分布式、DevOps等相关技术者优先； netty 数据仓库的ETL的开发和数据建模、 Dubbo， Zookpeeper SpringCloud SpringBoot]]></content>
+      <categories>
+        <category>求职</category>
+      </categories>
+      <tags>
+        <tag>求职</tag>
       </tags>
   </entry>
   <entry>
@@ -85,7 +107,7 @@
   <entry>
     <title><![CDATA[Java多线程]]></title>
     <url>%2F2017%2F08%2F15%2FJava%E5%A4%9A%E7%BA%BF%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP 进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频 线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音 二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​ 重写run方法，调用实现类对象的start方法启动线程。例如：st.start()。 实现Runnable接口： ​ 重写run方法，实现实现类对象，通过调用Thread对象（代理类对象）的start方法启动线程。例如：new Thread(st).start()。 实现Callable接口： ​ JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图： 数据的并发问题：多个代理抢夺同一份资源 三、线程的状态和方法类比足球比赛中球员的状态 新建（new）：球员入选23人名单 线程对象一旦创建，就进入了新生状态。线程有了自己的工作空间 就绪（runnable）：球员入场，去抢球 start 阻塞事件解除 yield（礼让）：将线程从运行状态转入就绪状态，静态方法，写在线程体中。 jvm切换其他线程 运行（running）：带球奔跑 CPU调度时发生（无法人为干预） 阻塞（blocked）：球被抢了 sleep（暂停）：抱着资源睡觉，不会释放锁 wait：等在一边，此时别人可以使用资源 join（插队）:合并线程，对象的成员方法，阻塞所在的线程体 read/write 死亡（dead）：球员下场 代码正常执行完毕 强制结束（已过时） 加入boolean标识，标识线程体是否可以运行 四、线程的基本信息和优先级线程的分类： 用户线程 守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程 线程的其他常用方法： 线程调度器按照优先级将线程调入CPU 注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行； 五、线程的同步和死锁线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程） 同步技术原理 线程安全解决方案： 同步代码块： 格式：synchronized(“obj”){ ​ 访问了共享数据的代码； ​ } 锁对象：obj（定义的任意一个对象，在run方法外创建） 同步方法： 格式：“修饰符” synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：实现类对象，即this。 静态同步方法（优先于对象存在）： 格式：“修饰符” static synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：本类的class属性（class文件对象） Lock锁： JDK1.5之后出现在java.util.concurrent.locks包中的Lock接口（实现类为ReentrantLock）提供了一种新的锁机制。 格式：在成员位置创建ReentrantLock对象；在访问共享数据代码前使用方法lock()；在访问共享数据代码后使用方法unlock()。 补充： 死锁的产生：多个线程各自占有一些共享资源，并且相互等待资源【多个操作者（N&gt;=2）争夺多个资源（M&gt;2）,而且N&gt;=M】。当某一个同步块中同时拥有两个以上对象的锁是，就可能会发生死锁问题。 死锁的解决： 互斥条件：一个资源每次只能被一个进程使用 请求与保持条件：一个进程因请求资源二阻塞时，对以获得的资源保持不放 不剥夺条件：进程以获得的资源，在使用完之前，不能强行剥夺 循环等待条件：若干进程之间形成一种头尾相接的循环等待资源关系 六、生产者消费者模式七、任务调度]]></content>
+    <content type="text"><![CDATA[Java多线程一、 程序、进程、线程的概念 程序：静态概念，指令的有序集合。例如某个APP 进程：在操作系统中运行的程序，系统资源分配的单位。例如打开播放器看视频 线程：多个任务，同时进行，是调度和执行的最小单位。例如用播放器看视频时一边放图像，一边放声音 二、Java如何实现多线程 继承Thread类（由于Java的单继承特点，不加以使用） ​ 重写run方法，调用实现类对象的start方法启动线程。例如：st.start()。 实现Runnable接口： ​ 重写run方法，实现实现类对象，通过调用Thread对象（代理类对象）的start方法启动线程。例如：new Thread(st).start()。 实现Callable接口： ​ JUC并发编程。重写call方法（区分与run方法，call方法带返回值），通过实现类对象，创建执行任务，提交执行，获取结果，关闭服务来实现多线程。例子如下图： 数据的并发问题：多个代理抢夺同一份资源 三、线程的状态和方法类比足球比赛中球员的状态 新建（new）：球员入选23人名单 线程对象一旦创建，就进入了新生状态。线程有了自己的工作空间 就绪（runnable）：球员入场，去抢球 start 阻塞事件解除 yield（礼让）：将线程从运行状态转入就绪状态，静态方法，写在线程体中。 jvm切换其他线程 运行（running）：带球奔跑 CPU调度时发生（无法人为干预） 阻塞（blocked）：球被抢了 sleep（暂停）：抱着资源睡觉，不会释放锁 wait：等在一边，此时别人可以使用资源 join（插队）:合并线程，对象的成员方法，阻塞所在的线程体 read/write 死亡（dead）：球员下场 代码正常执行完毕 强制结束（已过时） 加入boolean标识，标识线程体是否可以运行 四、线程的基本信息和优先级线程的分类： 用户线程 守护线程：是为用户线程服务的；jvm停止不用等待守护线程执行完毕；通过方法setDaemon（true）可以将用户线程设置为守护线程 线程的其他常用方法： ![1559736274640](D:\Program Files\blog\source_posts\线程的基本方法.png) 线程调度器按照优先级将线程调入CPU 注意：设置优先级应该在线程启动之前；线程优先级设置方法：setPriority();优先级的范围应该在1~10之间；优先级高只是代表被执行的概率高，并不代表决定先被执行； 五、线程的同步和死锁线程安全问题：当多个线程同时争夺同一个数据资源时，会出现数据资源获取错乱的情况。（两条语句之间的执行会有一定的时间差，期间可能会启动另一个线程） ![1559995199164](D:\Program Files\blog\source_posts\Java多线程\1.jpg) 同步技术原理 线程安全解决方案： 同步代码块： 格式：synchronized(“obj”){ ​ 访问了共享数据的代码； ​ } 锁对象：obj（定义的任意一个对象，在run方法外创建） 同步方法： 格式：“修饰符” synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：实现类对象，即this。 静态同步方法（优先于对象存在）： 格式：“修饰符” static synchronized “返回值” “方法名”（）{ ​ 访问了共享数据的代码； ​ } 锁对象：本类的class属性（class文件对象） Lock锁： JDK1.5之后出现在java.util.concurrent.locks包中的Lock接口（实现类为ReentrantLock）提供了一种新的锁机制。 格式：在成员位置创建ReentrantLock对象；在访问共享数据代码前使用方法lock()；在访问共享数据代码后使用方法unlock()。 补充： 死锁的产生：多个线程各自占有一些共享资源，并且相互等待资源【多个操作者（N&gt;=2）争夺多个资源（M&gt;2）,而且N&gt;=M】。当某一个同步块中同时拥有两个以上对象的锁是，就可能会发生死锁问题。 死锁的解决： 互斥条件：一个资源每次只能被一个进程使用 请求与保持条件：一个进程因请求资源二阻塞时，对以获得的资源保持不放 不剥夺条件：进程以获得的资源，在使用完之前，不能强行剥夺 循环等待条件：若干进程之间形成一种头尾相接的循环等待资源关系 六、生产者消费者模式七、任务调度]]></content>
       <categories>
         <category>后端</category>
       </categories>
